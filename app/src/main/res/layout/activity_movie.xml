@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_movie"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="mycartoon.yangqian.com.mycartoon.Activity.HomeActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:id="@+id/slideView"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:background="@color/red">
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/vp_shouye"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <LinearLayout android:id="@+id/dotLayout"
+                              android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:layout_alignParentBottom="true"
+                              android:padding="8dp"
+                              android:gravity="right"
+                              android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/iv_dot0"
+                        android:layout_width="8dp"
+                        android:layout_height="8dp"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/dianhong" />
+
+                    <ImageView
+                        android:id="@+id/iv_dot1"
+                        android:layout_width="8dp"
+                        android:layout_height="8dp"
+                        android:background="@drawable/dianbai"
+                        android:layout_marginRight="10dp"/>
+                    <ImageView
+                        android:id="@+id/iv_dot2"
+                        android:layout_width="8dp"
+                        android:layout_height="8dp"
+                        android:background="@drawable/dianbai"
+                        android:layout_marginRight="10dp"/>
+                    <ImageView
+                        android:id="@+id/iv_dot3"
+                        android:layout_width="8dp"
+                        android:layout_height="8dp"
+                        android:background="@drawable/dianbai"
+                        android:layout_marginRight="10dp"/>
+
+                </LinearLayout>
+            </RelativeLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="区域分类:"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="@dimen/dp_10"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.3"/>
+                <LinearLayout
+                    android:id="@+id/area_c"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:background="@drawable/select_sign"
+                    >
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:text="大陆"
+                        android:gravity="center"
+
+                        android:textSize="20sp"/>
+                    <LinearLayout
+                        android:id="@+id/dalu_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"
+                        android:background="@color/color_actionBar"
+                        android:orientation="vertical"
+                        ></LinearLayout>
+
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.3"/>
+                <LinearLayout
+                    android:id="@+id/area_u"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:background="@drawable/select_sign"
+                    >
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:text="香港"
+                        android:gravity="center"
+                        android:textSize="20sp"
+
+                        />
+                    <LinearLayout
+                        android:id="@+id/oumei_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"
+                        android:background="@color/color_actionBar"
+                        android:orientation="vertical"
+
+                        ></LinearLayout>
+
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.3"/>
+                <LinearLayout
+                    android:id="@+id/area_h"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:background="@drawable/select_sign"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:text="欧美"
+                        android:gravity="center"
+                        android:textSize="20sp"
+
+                        />
+                    <LinearLayout
+                        android:id="@+id/xianggang_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"
+                        android:background="@color/color_actionBar"
+                        android:orientation="vertical"
+                        ></LinearLayout>
+
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.3"/>
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <ProgressBar
+                    android:id="@+id/pb_movie"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="100dp"/>
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="1800dp"
+                    android:visibility="invisible"></android.support.v7.widget.RecyclerView>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

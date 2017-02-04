@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_lead"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="mycartoon.yangqian.com.mycartoon.Activity.LeadActivity">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_lead"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/red"></android.support.v4.view.ViewPager>
+
+    <LinearLayout
+        android:id="@+id/ll_lead_b"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="80dp"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/tv_lead_b"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="进入我的影视圈"
+            android:textSize="23sp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:background="@drawable/bg_lead_b"
+            android:padding="10dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/iv_lead_icon"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+        <ImageView
+            android:id="@+id/iv_lead_icon0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/adware_style_selected"/>
+        <ImageView
+            android:id="@+id/iv_lead_icon1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/adware_style_default"
+            android:layout_marginLeft="20dp"/>
+        <ImageView
+            android:id="@+id/iv_lead_icon2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/adware_style_default"
+            android:layout_marginLeft="20dp"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

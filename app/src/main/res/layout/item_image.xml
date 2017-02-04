@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:padding="10dp"
+              android:orientation="vertical"
+                android:background="#FAFAFA">
+
+    <LinearLayout
+        android:id="@+id/ll_team1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#292708"
+            android:textSize="18sp"
+            android:layout_gravity="center_vertical"
+            android:text="影片名称:"
+
+            />
+        <TextView
+            android:id="@+id/tv_name_som"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#292708"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical"
+            android:text="奇异博士"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_team2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/ll_team1"
+        android:layout_marginTop="7dp">
+
+        <TextView
+            android:id="@+id/tv_week"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#292708"
+            android:textSize="18sp"
+            android:layout_gravity="center_vertical"
+            android:text="榜单周数:"
+
+            />
+        <TextView
+            android:id="@+id/tv_week_som"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#292708"
+            android:textSize="15sp"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical"
+            android:text="2016.11.7- 2016.11.13（单位：万元）"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_team3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/ll_team2"
+        android:layout_marginTop="7dp">
+
+        <TextView
+    android:id="@+id/tv_week_mon"
+    android:gravity="center"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="#292708"
+    android:textSize="18sp"
+    android:layout_gravity="center_vertical"
+    android:text="周末票房:"
+    />
+    <TextView
+        android:id="@+id/tv_week_mon_som"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#292708"
+        android:textSize="15sp"
+        android:layout_marginLeft="10dp"
+        android:layout_gravity="center_vertical"
+        android:text="27000"
+        />
+</LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_team4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/ll_team3"
+        android:layout_marginTop="7dp">
+
+        <TextView
+            android:id="@+id/tv_month_mon"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#292708"
+            android:textSize="18sp"
+            android:layout_gravity="center_vertical"
+            android:text="累计票房:"
+            />
+        <TextView
+            android:id="@+id/tv_month_mon_som"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#292708"
+            android:textSize="15sp"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical"
+            android:text="57100"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_team5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/ll_team4"
+        android:layout_marginTop="7dp">
+
+        <TextView
+            android:id="@+id/tv_array"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#292708"
+            android:textSize="18sp"
+            android:layout_gravity="center_vertical"
+            android:text="排名:"
+            />
+        <TextView
+            android:id="@+id/tv_array_som"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#292708"
+            android:textSize="15sp"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical"
+            android:text="第1名"
+            />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/ll_team5"
+        android:background="@color/color_actionBar"/>
+
+
+</RelativeLayout>

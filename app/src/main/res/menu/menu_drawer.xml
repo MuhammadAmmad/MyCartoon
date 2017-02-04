@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:id="@+id/group1">
+        <item android:id="@+id/menu_hide"
+            android:title="登录"
+            android:icon="@drawable/ic_hide"/>
+    </group>
+    <group android:id="@+id/group2">
+        <item android:id="@+id/menu_list"
+              android:title="注册"
+              android:icon="@drawable/ic_my_list"/>
+    </group>
+    <group android:id="@+id/group3">
+        <item android:id="@+id/menu_help"
+              android:title="忘记密码"
+              android:icon="@drawable/ic_live_help"/>
+    </group>
+    <group >
+
+        <item android:id="@+id/menu_null4"
+              android:title=""/>
+    </group>
+    <group >
+
+        <item android:id="@+id/menu_null5"
+              android:title=""/>
+    </group>
+
+
+    <group android:id="@+id/group6">
+        <item android:id="@+id/menu_loginout"
+              android:title="退出登录"
+              android:icon="@drawable/ic_logout"/>
+    </group>
+    <group android:id="@+id/group7">
+        <item android:id="@+id/menu_null"
+            android:title=""/>
+    </group>
+
+</menu>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--xmln:app因为用到了第三方所以会生成一个命名空间，
+来提示不在Android自带的程序中找，而是在第三方中找-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/dp_300"
+                android:background="@mipmap/bg_world"
+                xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.pkmmte.view.CircularImageView
+        android:id="@+id/iv_usericon"
+        android:layout_width="@dimen/dp_100"
+        android:layout_height="@dimen/dp_100"
+        android:src="@mipmap/user_icon"
+        android:layout_centerInParent="true"
+        app:border="true"
+        app:border_color="@color/text_color_white"
+        app:border_width="@dimen/dp_2"
+        />
+    <TextView
+        android:id="@+id/tv_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="游客"
+        android:textColor="@color/text_color_white"
+        android:textSize="23sp"
+        android:layout_below="@id/iv_usericon"
+        android:layout_marginTop="@dimen/dp_20"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>
